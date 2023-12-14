@@ -32,7 +32,17 @@ p{
 .HERO{
     background-image: var(--background-gradient);
     height: 500px;
+    border-bottom-left-radius: 100px;
 }
 .HERO .OVERLAY{
     min-height: 500px;
+}
+.btn{
+    color: var(--light-red);
+    font-weight: bold;
+}
+@media (min-1024px) {
+    .HERO, .HERO .OVERLAY{
+        height: 600px;
+    }
 }

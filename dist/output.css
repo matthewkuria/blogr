@@ -594,6 +594,22 @@ video {
   position: relative;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -606,6 +622,20 @@ video {
 
 .my-5 {
   margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mb-5 {
   margin-bottom: 1.25rem;
 }
 
@@ -643,6 +673,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -793,10 +827,22 @@ p{
 .HERO{
   background-image: var(--background-gradient);
   height: 500px;
+  border-bottom-left-radius: 100px;
 }
 
 .HERO .OVERLAY{
   min-height: 500px;
+}
+
+.btn{
+  color: var(--light-red);
+  font-weight: bold;
+}
+
+@media (min-1024px) {
+  .HERO, .HERO .OVERLAY{
+    height: 600px;
+  }
 }
 
 .focus\:outline-none:focus {
@@ -833,15 +879,43 @@ p{
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
   }
 
   .md\:flex {
     display: flex;
   }
 
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
