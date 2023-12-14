@@ -26,11 +26,13 @@
           <div class=" hidden md:flex space-x-4">
 
               <!-- Dropdown Trigger -->
-              <div class="relative inline-block text-white">
-                  <button class="focus:outline-none"> Product</button>
-
+              <div class="relative md:flex text-white">
+                  <button id="dropdownToggle" class="focus:outline-none"> Product
+                  <span> <img src="/images/icon-arrow-light.svg" alt=""></span>
+                  </button>
+                    
                   <!-- Dropdown Content -->
-                  <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                  <div id="dropdownContent" class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
                       <a href="#" class="block py-2"> Overview</a>
                       <a href="#" class="block py-2">Marketplace</a>
                       <a href="#" class="block py-2"> Features</a>
@@ -38,7 +40,9 @@
                   </div>
               </div>
               <div class="relative inline-block text-white">
-                <button class="focus:outline-none"> Company</button>
+                <button class="focus:outline-none"> Company
+                  <span> <img src="/images/icon-arrow-light.svg" alt=""></span>
+                </button>
                
                 <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
                     <a href="#" class="block py-2"> About</a>
@@ -48,7 +52,9 @@
                 </div>
             </div>
             <div class="relative inline-block text-white">
-              <button class="focus:outline-none">  Connect</button>
+              <button class="focus:outline-none">  Connect
+                <span> <img src="/images/icon-arrow-light.svg" alt="" class="flex"></span>
+              </button>
              
               <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
                   <a href="#" class="block py-2"> Contact</a>
@@ -65,12 +71,63 @@
             </ul>
           </div>
           <!-- hamburger button -->
-          <button data-collapse-toggle="navbar-dropdown" type="button" 
+          <button id="hamburger" data-collapse-toggle="navbar-dropdown" type="button" 
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
            aria-controls="navbar-dropdown" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <img src="/images/icon-hamburger.svg" alt="">
         </button>
+         <!-- Mobile Menu -->
+         <div id="mobileMenu" class="hidden absolute mt-5 top-20 bottom-0 right-10 left-10 md:hidden rounded">
+         <ul class="flex flex-col text-center justify-center">
+          
+
+            <!-- Dropdown Trigger -->
+            <div class="relative  mt-20">
+                <button id="dropdownToggle" class="focus:outline-none"> Product
+                <span> <img src="/images/icon-arrow-dark.svg" alt=""></span>
+                </button>
+                  
+                <!-- Dropdown Content -->
+                <div id="dropdownContent" class="absolute hidden mt-2 bg-gray-600  p-2 rounded">
+                    <a href="#" class="block py-2"> Overview</a>
+                    <a href="#" class="block py-2">Marketplace</a>
+                    <a href="#" class="block py-2"> Features</a>
+                    <a href="#" class="block py-2">Integrations</a>
+                </div>
+            </div>
+            <div class="relative inline-block mt-10">
+              <button class="focus:outline-none"> Company
+                <span> <img src="/images/icon-arrow-dark.svg" alt=""></span>
+              </button>
+             
+              <div class="absolute hidden mt-2 bg-gray-600  p-2 rounded">
+                  <a href="#" class="block py-2"> About</a>
+                  <a href="#" class="block py-2">Team</a>
+                  <a href="#" class="block py-2"> Blog</a>
+                  <a href="#" class="block py-2">Careers</a>
+              </div>
+          </div>
+          <div class="relative inline-block mt-10 border-b mb-0">
+            <button class="focus:outline-none">  Connect
+              <span> <img src="/images/icon-arrow-dark.svg" alt="" class="flex"></span>
+            </button>
+           
+            <div class="absolute hidden mt-2 bg-gray-600  p-2 rounded">
+                <a href="#" class="block py-2"> Contact</a>
+                <a href="#" class="block py-2">Newsletter</a>
+                <a href="#" class="block py-2"> LinkedIn</a>
+            </div>              
+        </div>
+      
+        <button class="my-3  mt-20"> <a href="" class=" font-bold ">Login</a></button>
+        <button class="mt-10"><a href="" class="signupBtn font-bold text-white py-2 px-4 rounded-full ">Sign Up</a></button>
+       
+        <!-- End of Mobile Menu -->
+        </div>
+        
+          
+       
       
   </nav>  
   </header>
@@ -145,5 +202,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+ <script src="/src/script.js"></script>
 </body>
 </html>

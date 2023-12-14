@@ -41,6 +41,16 @@ p{
     color: var(--light-red);
     font-weight: bold;
 }
+#mobileMenu{
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+    min-height: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.signupBtn{
+    background-image: var(--background-gradient);
+}
 @media (min-1024px) {
     .HERO, .HERO .OVERLAY{
         height: 600px;
