@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Font from the style guide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- The styles link -->
+  <link rel="stylesheet" href="/dist/output.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+  
+</head>
+<body >
+  <section class="NAV-MENU bg-gradient-to-r from-hsl(13, 100%, 72%) to-blue-500">    
+    <nav class=" p-4">
+      <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white"><img src="/images/logo.svg" alt=""></div>
+          
+
+          <div class=" hidden md:flex space-x-4">
+              <a href="#" class="text-white">Home</a>
+
+              <!-- Dropdown Trigger -->
+              <div class="relative inline-block text-white">
+                  <button class="focus:outline-none"> Product</button>
+
+                  <!-- Dropdown Content -->
+                  <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                      <a href="#" class="block py-2"> Overview</a>
+                      <a href="#" class="block py-2">Marketplace</a>
+                      <a href="#" class="block py-2"> Features</a>
+                      <a href="#" class="block py-2">Integrations</a>
+                  </div>
+              </div>
+              <div class="relative inline-block text-white">
+                <button class="focus:outline-none"> Company</button>
+               
+                <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                    <a href="#" class="block py-2"> About</a>
+                    <a href="#" class="block py-2">Team</a>
+                    <a href="#" class="block py-2"> Blog</a>
+                    <a href="#" class="block py-2">Careers</a>
+                </div>
+            </div>
+            <div class="relative inline-block text-white">
+              <button class="focus:outline-none">  Connect</button>
+             
+              <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                  <a href="#" class="block py-2"> Contact</a>
+                  <a href="#" class="block py-2">Newsletter</a>
+                  <a href="#" class="block py-2"> LinkedIn</a>
+              </div>
+          </div>
+          </div>
+          <div class="hidden md:block">
+            <ul class="inline-flex justify-between items-center">
+             <button> <a href="" class="text-white">Login</a></button>
+              <button><a href="" class="text-red-400 p-2 bg-white rounded-full">Sign Up</a></button>
+              
+            </ul>
+          </div>
+          <!-- hamburger button -->
+          <button data-collapse-toggle="navbar-dropdown" type="button" 
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+           aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="/images/icon-hamburger.svg" alt="">
+        </button>
+      </div>
+  </nav>  
+  </section>
+
+<section class="HERO mt-5  ">  
+  <div class=" OVERLAY mt-5 px-5 flex flex-col justify-center  items-center text-center">
+    <h1 class="font-bold text-4xl text-white">A modern publishing platform</h1>
+    <p class="">Grow your audience and build your online brand</p>
+    <ul class="flex items-center">
+      <li class="mx-1 my-5">
+        <button class="text-red-400 p-2 bg-white rounded-full"> Start for Free</button>
+      </li>
+      <li class="mx-1 my-5">
+        <button class="text-white border p-2 border-white rounded-full">  Learn More</button>
+      </li>
+    </ul>
+
+  </div>
+
+</section>
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
