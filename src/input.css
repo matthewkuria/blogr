@@ -21,6 +21,7 @@
 
 body{
     font-family: "Overpass", sans-serif;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
     color: var(--very-dark-blue);
@@ -69,4 +70,5 @@ color: var(--white);
     color: var(--grayish-blue);
     min-width: 600px;
     border-top-right-radius: 100px;
+    overflow-x: hidden;
 }
