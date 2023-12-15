@@ -23,12 +23,14 @@ document.documentElement.addEventListener("click", function () {
 document.getElementById('hamburger').addEventListener('click', function () {
     document.getElementById('mobileMenu').classList.toggle('hidden');
 
+     // target menu-links
     var menuLinks = document.querySelector('.menu-links');
       menuLinks.classList.toggle('active');
+
       //target hamburger icon 
     var hamburgerIcon = document.getElementById('hamburgerIcon');
     var isOpen = menuLinks.classList.contains('active');
 
-     // Change the icon based on the menu state
+     // Change the icon based on the menu state using ternary operator
      hamburgerIcon.src = isOpen ? "/images/icon-close.svg" : '/images/icon-hamburger.svg';
 });
