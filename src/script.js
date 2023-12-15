@@ -25,8 +25,10 @@ document.getElementById('hamburger').addEventListener('click', function () {
 
     var menuLinks = document.querySelector('.menu-links');
       menuLinks.classList.toggle('active');
+      //target hamburger icon 
     var hamburgerIcon = document.getElementById('hamburgerIcon');
     var isOpen = menuLinks.classList.contains('active');
+
      // Change the icon based on the menu state
-     hamburgerIcon.src = isOpen ? './images/icon-close.png' : '/images/icon-hamburger.svg';
+     hamburgerIcon.src = isOpen ? "/images/icon-close.svg" : '/images/icon-hamburger.svg';
 });
