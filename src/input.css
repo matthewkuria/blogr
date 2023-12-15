@@ -34,7 +34,7 @@ p{
     color: var(--light-red);
     font-weight: bold;
 }
-.sgnBtn:hover{
+.sgnBtn:hover, .startBtn:hover{
 background-color: var(--very-light-red);
 color: var(--white);
 }
@@ -46,7 +46,7 @@ color: var(--white);
 .HERO .OVERLAY{
     min-height: 500px;
 }
-.btn{
+.startBtn{
     color: var(--light-red);
     font-weight: bold;
 }
