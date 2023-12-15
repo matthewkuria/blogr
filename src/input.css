@@ -67,8 +67,7 @@ color: var(--white);
 }
 .FOOTER{
     background-color: var(--very-dark-black-blue);
-    color: var(--grayish-blue);
-    min-width: 600px;
+    color: var(--grayish-blue);    
     border-top-right-radius: 100px;
-    overflow-x: hidden;
+    
 }
