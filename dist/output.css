@@ -1893,6 +1893,10 @@ video {
   background-image: url(/images/bg-pattern-intro-mobile.svg);
 }
 
+.bg-\[url\(\/images\/bg-pattern-circles\.svg\)\] {
+  background-image: url(/images/bg-pattern-circles.svg);
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
