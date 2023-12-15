@@ -18,7 +18,7 @@
 <body >
   <header class="NAV-MENU absolute items-center inline-flex justify-between md:justify-start md:ml-20 p-8 w-full">   
     <div class="">
-      <img src="/images/logo.svg" alt="Blogr Logo">
+      <img src="/images/logo.svg" alt="Blogr Logo" >
     </div>
  
     <nav class="p-4 inline-flex justify-between items-center">       
@@ -27,47 +27,47 @@
 
               <!-- Dropdown Trigger -->
               <div class="relative md:flex text-white">
-                  <button id="dropdownToggle" class="focus:outline-none inline-flex items-center"> Product
-                  <span> <img src="/images/icon-arrow-light.svg" alt="" class="ml-2"></span>
+                  <button id="btn" class=" btn focus:outline-none inline-flex items-center "> Product
+                  <span> <img src="/images/icon-arrow-light.svg" alt="" class="ml-2" id="arrow"></span>
                   </button>
                     
                   <!-- Dropdown Content -->
-                  <div id="dropdownContent" class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                  <div id="dropdown" class=" dropdown hidden absolute mt-10 bg-white p-2 rounded">
                      <ul class="bg-white">
-                     <li><a href="#" class="block py-2"> Overview</a></li> 
-                     <li><a href="#" class="block py-2">Marketplace</a></li>                      
-                     <li><a href="#" class="block py-2"> Features</a></li> 
-                      <li><a href="#" class="block py-2">Integrations</a></li>
+                     <li><a href="#" class="flex items-center text-black py-2  hover:font-bold"> Overview</a></li> 
+                     <li><a href="#" class="flex items-center text-black py-2  hover:font-bold">Marketplace</a></li>                      
+                     <li><a href="#" class="flex items-center text-black py-2  hover:font-bold"> Features</a></li> 
+                      <li><a href="#" class="flex items-center text-black py-2  hover:font-bold">Integrations</a></li>
                      </ul>
                   </div>
               </div>
               <div class="relative inline-block text-white">
-                <button class="focus:outline-none inline-flex items-center"> Company
+                <button class=" btn focus:outline-none inline-flex items-center"> Company
                   <span> <img src="/images/icon-arrow-light.svg" alt="" class="ml-2"></span>
                 </button>
                
-                <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
-                    <a href="#" class="block py-2"> About</a>
-                    <a href="#" class="block py-2">Team</a>
-                    <a href="#" class="block py-2"> Blog</a>
-                    <a href="#" class="block py-2">Careers</a>
+                <div class=" dropdown hidden absolute mt-2 bg-white p-2 rounded">
+                    <a href="#" class="flex items-center text-black py-2  hover:font-bold"> About</a>
+                    <a href="#" class="flex items-center text-black py-2  hover:font-bold">Team</a>
+                    <a href="#" class="flex items-center text-black py-2  hover:font-bold"> Blog</a>
+                    <a href="#" class="flex items-center text-black py-2  hover:font-bold">Careers</a>
                 </div>
             </div>
             <div class="relative inline-block text-white">
-              <button class="focus:outline-none inline-flex items-center">  Connect
-                <span> <img src="/images/icon-arrow-light.svg" alt=""class="ml-2"></span>
+              <button class=" btn focus:outline-none inline-flex items-center">  Connect
+                <span> <img src="/images/icon-arrow-light.svg" alt=""class="ml-2" ></span>
               </button>
              
-              <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
-                  <a href="#" class="block py-2"> Contact</a>
-                  <a href="#" class="block py-2">Newsletter</a>
-                  <a href="#" class="block py-2"> LinkedIn</a>
+              <div class=" dropdown hidden absolute mt-2 bg-white p-2 rounded">
+                  <a href="#" class="flex items-center text-black py-2 hover:font-bold"> Contact</a>
+                  <a href="#" class="flex items-center text-black py-2 hover:font-bold">Newsletter</a>
+                  <a href="#" class="flex items-center text-black py-2 hover:font-bold"> LinkedIn</a>
               </div>
           </div>
           </div>
           <div class="hidden md:absolute right-20 mr-20 md:flex md:ml-auto">
             <ul class="inline-flex justify-between items-center">
-             <button class="text-white mx-3 font-bold"> <a href="">Login</a></button>
+             <button class=" text-white mx-3 font-bold"> <a href="">Login</a></button>
               <button class="sgnBtn  py-1 px-4 bg-white rounded-full mx-3"><a href="">Sign Up</a></button>
               
             </ul>
