@@ -729,6 +729,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -759,6 +764,10 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .box-border {
