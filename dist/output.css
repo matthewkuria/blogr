@@ -681,6 +681,10 @@ video {
   z-index: 40;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .float-right {
   float: right;
 }
@@ -940,6 +944,17 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-x-110 {
+  --tw-scale-x: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1866,9 +1881,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1876,14 +1891,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+.bg-\[url\(\/images\/bg-pattern-intro-mobile\.svg\)\] {
+  background-image: url(/images/bg-pattern-intro-mobile.svg);
 }
 
 .decoration-slice {
@@ -1904,6 +1913,18 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-auto {
+  background-size: auto;
 }
 
 .bg-fixed {
@@ -1933,6 +1954,14 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
 }
 
 .bg-repeat {
@@ -2586,7 +2615,7 @@ p{
 }
 
 .HERO{
-  background-image: var(--background-gradient);
+  background: var(--background-gradient);
   height: 500px;
   border-bottom-left-radius: 100px;
 }
@@ -2783,6 +2812,26 @@ p{
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:bg-\[url\(\/images\/bg-pattern-intro-desktop\.svg\)\] {
+    background-image: url(/images/bg-pattern-intro-desktop.svg);
+  }
+
+  .md\:bg-center {
+    background-position: center;
+  }
+
+  .md\:bg-right-top {
+    background-position: right top;
+  }
+
+  .md\:bg-top {
+    background-position: top;
+  }
+
+  .md\:bg-right {
+    background-position: right;
   }
 
   .md\:text-5xl {

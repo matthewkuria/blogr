@@ -19,10 +19,7 @@ document.documentElement.addEventListener("click", function () {
     }
   });
 });
-
-
-
-
+// hamburger script
 document.getElementById('hamburger').addEventListener('click', function () {
     document.getElementById('mobileMenu').classList.toggle('hidden');
 });

@@ -57,7 +57,7 @@ background-color: var(--very-light-red);
 color: var(--white);
 }
 .HERO{
-    background-image: var(--background-gradient);
+    background: var(--background-gradient);
     height: 500px;
     border-bottom-left-radius: 100px;
 }
