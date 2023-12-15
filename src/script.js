@@ -13,6 +13,12 @@ dropdownBtn.addEventListener("click", function (e) {
     e.stopPropagation();
     toggleDropdown();
   });
+//   Close the dropdown menu
+document.documentElement.addEventListener("click", function () {
+    if (dropdownMenu.classList.contains("show")) {
+      toggleDropdown();
+    }
+  });
 
 document.getElementById('hamburger').addEventListener('click', function () {
     document.getElementById('mobileMenu').classList.toggle('hidden');
