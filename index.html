@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Font from the style guide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- The styles link -->
+  <link rel="stylesheet" href="/dist/output.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+  
+</head>
+<body >
+  <header class="NAV-MENU absolute items-center inline-flex justify-between md:justify-start md:ml-20 p-8 w-full">   
+    <div class="">
+      <img src="/images/logo.svg" alt="Blogr Logo">
+    </div>
+ 
+    <nav class="p-4 inline-flex justify-between items-center">       
+
+          <div class=" hidden md:flex space-x-4">
+
+              <!-- Dropdown Trigger -->
+              <div class="relative md:flex text-white">
+                  <button id="dropdownToggle" class="focus:outline-none"> Product
+                  <span> <img src="/images/icon-arrow-light.svg" alt=""></span>
+                  </button>
+                    
+                  <!-- Dropdown Content -->
+                  <div id="dropdownContent" class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                      <a href="#" class="block py-2"> Overview</a>
+                      <a href="#" class="block py-2">Marketplace</a>
+                      <a href="#" class="block py-2"> Features</a>
+                      <a href="#" class="block py-2">Integrations</a>
+                  </div>
+              </div>
+              <div class="relative inline-block text-white">
+                <button class="focus:outline-none"> Company
+                  <span> <img src="/images/icon-arrow-light.svg" alt=""></span>
+                </button>
+               
+                <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                    <a href="#" class="block py-2"> About</a>
+                    <a href="#" class="block py-2">Team</a>
+                    <a href="#" class="block py-2"> Blog</a>
+                    <a href="#" class="block py-2">Careers</a>
+                </div>
+            </div>
+            <div class="relative inline-block text-white">
+              <button class="focus:outline-none">  Connect
+                <span> <img src="/images/icon-arrow-light.svg" alt="" class="flex"></span>
+              </button>
+             
+              <div class="absolute hidden mt-2 bg-gray-800 text-white p-2 rounded">
+                  <a href="#" class="block py-2"> Contact</a>
+                  <a href="#" class="block py-2">Newsletter</a>
+                  <a href="#" class="block py-2"> LinkedIn</a>
+              </div>
+          </div>
+          </div>
+          <div class="hidden md:absolute right-20 mr-20 md:flex md:ml-auto">
+            <ul class="inline-flex justify-between items-center">
+             <button class="text-white mx-3 font-bold"> <a href="">Login</a></button>
+              <button class="sgnBtn  py-1 px-4 bg-white rounded-full mx-3"><a href="">Sign Up</a></button>
+              
+            </ul>
+          </div>
+          <!-- hamburger button -->
+          <button id="hamburger" data-collapse-toggle="navbar-dropdown" type="button" 
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+           aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="/images/icon-hamburger.svg" alt="">
+        </button>
+         <!-- Mobile Menu -->
+         <div id="mobileMenu" class="hidden absolute mt-5 top-20 bottom-0 right-10 left-10 md:hidden rounded">
+         <ul class="flex flex-col text-center justify-center">
+          
+
+            <!-- Dropdown Trigger -->
+            <div class="relative  mt-20">
+                <button id="dropdownToggle" class="focus:outline-none"> Product
+                <span> <img src="/images/icon-arrow-dark.svg" alt=""></span>
+                </button>
+                  
+                <!-- Dropdown Content -->
+                <div id="dropdownContent" class="absolute hidden mt-2 bg-gray-600  p-2 rounded">
+                    <a href="#" class="block py-2"> Overview</a>
+                    <a href="#" class="block py-2">Marketplace</a>
+                    <a href="#" class="block py-2"> Features</a>
+                    <a href="#" class="block py-2">Integrations</a>
+                </div>
+            </div>
+            <div class="relative inline-block mt-10">
+              <button class="focus:outline-none"> Company
+                <span> <img src="/images/icon-arrow-dark.svg" alt=""></span>
+              </button>
+             
+              <div class="absolute hidden mt-2 bg-gray-600  p-2 rounded">
+                  <a href="#" class="block py-2"> About</a>
+                  <a href="#" class="block py-2">Team</a>
+                  <a href="#" class="block py-2"> Blog</a>
+                  <a href="#" class="block py-2">Careers</a>
+              </div>
+          </div>
+          <div class="relative inline-block mt-10 border-b mb-0">
+            <button class="focus:outline-none">  Connect
+              <span> <img src="/images/icon-arrow-dark.svg" alt="" class="flex"></span>
+            </button>
+           
+            <div class="absolute hidden mt-2 bg-gray-600  p-2 rounded">
+                <a href="#" class="block py-2"> Contact</a>
+                <a href="#" class="block py-2">Newsletter</a>
+                <a href="#" class="block py-2"> LinkedIn</a>
+            </div>              
+        </div>
+      
+        <button class="my-3  mt-20"> <a href="" class=" font-bold ">Login</a></button>
+        <button class="mt-10"><a href="" class="signupBtn font-bold text-white py-2 px-4 rounded-full ">Sign Up</a></button>
+       
+        <!-- End of Mobile Menu -->
+        </div>
+        
+          
+       
+      
+  </nav>  
+  </header>
+
+<section class="HERO mt-5  ">  
+  <div class="absolute z-0">
+    <!-- <img src="/images/bg-pattern-intro-mobile.svg" alt="" class=""> -->
+  </div>
+  <div class=" OVERLAY mt-5 px-5 flex flex-col justify-center  items-center text-center z-40">
+    <h1 class="font-bold text-4xl md:text-5xl xl:text-6xl text-white mb-5">A modern publishing platform</h1>
+    <p class="text-white">Grow your audience and build your online brand</p>
+    <ul class="flex items-center">
+      <li class="mx-1 my-5">
+        <button class="btn p-2 bg-white rounded-full"> Start for Free</button>
+      </li>
+      <li class="mx-1 my-5">
+        <button class="font-bold text-white border p-2 border-white rounded-full">  Learn More</button>
+      </li>
+    </ul>
+
+  </div>
+
+</section>
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  <footer class="FOOTER">
+    <div class="grid-cols-1  md:inline-flex md:grid-cols-4 justify-between md:w-3/4 mb-20 md:mb-10 ">
+      <!-- Footer Logo image -->
+      <div class="md:mx-10 flex md:block justify-center md:justify-start ">
+        <img src="/images/logo.svg" alt="" class="mt-10">
+      </div>
+      <!-- product link -->
+      <div class="mt-20 md:mt-10 text-center">
+        <h1 class="text-white font-semibold"> Product</h1>
+        <ul>
+          <li><a href="">Overview</a></li>
+          <li><a href=""> Pricing</a></li>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Integrations</a></li>
+        </ul>
+      </div>
+      <!-- company link -->
+      <div class="mt-20 md:mt-10 text-center">
+        <h1 class="text-white font-semibold">  Company</h1>
+        <ul>
+          <li><a href="">  About</a></li>
+          <li><a href=""> Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+      <!-- connect link -->
+      <div class="mt-20  md:mt-10 text-center md:mb-5">
+        <h1 class="text-white font-semibold">  Connect</h1>
+        <ul>
+          <li><a href="">  Contact</a></li>
+          <li><a href=""> Newsletter</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  
+
+ 
+
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">matthew Kuria</a>.
+  </div>
+ <script src="/src/script.js"></script>
+</body>
+</html>
