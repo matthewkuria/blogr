@@ -677,10 +677,6 @@ video {
   z-index: 0;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -944,12 +940,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.scale-110 {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-x-110 {
@@ -1919,14 +1909,6 @@ video {
   background-size: cover;
 }
 
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-auto {
-  background-size: auto;
-}
-
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1954,10 +1936,6 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-left-bottom {
@@ -2632,7 +2610,7 @@ p{
 #mobileMenu{
   background-color: var(--white);
   color: var(--very-dark-blue);
-  min-height: 500px;
+  min-height: 100vh;
   font-size: 20px;
   font-weight: bold;
 }
@@ -2816,18 +2794,6 @@ p{
 
   .md\:bg-\[url\(\/images\/bg-pattern-intro-desktop\.svg\)\] {
     background-image: url(/images/bg-pattern-intro-desktop.svg);
-  }
-
-  .md\:bg-center {
-    background-position: center;
-  }
-
-  .md\:bg-right-top {
-    background-position: right top;
-  }
-
-  .md\:bg-top {
-    background-position: top;
   }
 
   .md\:bg-right {
