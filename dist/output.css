@@ -2505,6 +2505,7 @@ video {
 
 body{
   font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -2562,7 +2563,6 @@ p{
 .FOOTER{
   background-color: var(--very-dark-black-blue);
   color: var(--grayish-blue);
-  min-width: 600px;
   border-top-right-radius: 100px;
 }
 
