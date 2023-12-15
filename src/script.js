@@ -22,4 +22,11 @@ document.documentElement.addEventListener("click", function () {
 // hamburger script
 document.getElementById('hamburger').addEventListener('click', function () {
     document.getElementById('mobileMenu').classList.toggle('hidden');
+
+    var menuLinks = document.querySelector('.menu-links');
+      menuLinks.classList.toggle('active');
+    var hamburgerIcon = document.getElementById('hamburgerIcon');
+    var isOpen = menuLinks.classList.contains('active');
+     // Change the icon based on the menu state
+     hamburgerIcon.src = isOpen ? './images/icon-close.png' : '/images/icon-hamburger.svg';
 });
