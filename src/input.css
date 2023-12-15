@@ -29,6 +29,14 @@ p{
     font-size: 16px;
     line-height: 1.6;
 }
+.sgnBtn{
+    color: var(--light-red);
+    font-weight: bold;
+}
+.sgnBtn:hover{
+background-color: var(--very-light-red);
+color: var(--white);
+}
 .HERO{
     background-image: var(--background-gradient);
     height: 500px;
@@ -55,4 +63,10 @@ p{
     .HERO, .HERO .OVERLAY{
         height: 600px;
     }
+}
+.FOOTER{
+    background-color: var(--very-dark-black-blue);
+    color: var(--grayish-blue);
+    min-width: 600px;
+    border-top-right-radius: 100px;
 }
