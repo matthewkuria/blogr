@@ -80,13 +80,17 @@ color: var(--white);
     background-image: var(--background-gradient);
 }
 .STATE{
-    background-color: var(--very-dark-black-blue);
-    border-bottom-left-radius: 100px;
+    background-color: var(--very-dark-black-blue);   
     border-top-right-radius: 100px;
 }
 @media (min-1024px) {
     .HERO, .HERO .OVERLAY{
         height: 600px;
+    }
+    .STATE{
+        background-color: var(--very-dark-black-blue);
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
     }
 }
 .FOOTER{

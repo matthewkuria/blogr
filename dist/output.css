@@ -886,6 +886,10 @@ video {
   height: 8rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2648,13 +2652,18 @@ p{
 
 .STATE{
   background-color: var(--very-dark-black-blue);
-  border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
 }
 
 @media (min-1024px) {
   .HERO, .HERO .OVERLAY{
     height: 600px;
+  }
+
+  .STATE{
+    background-color: var(--very-dark-black-blue);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
   }
 }
 
