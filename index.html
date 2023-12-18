@@ -159,15 +159,16 @@
   </div>
 
 </section>
-<section class="Designed mt-5 bg-[url(/images/bg-pattern-circles.svg)] bg-top bg-contain bg-no-repeat ">
- <div class="">
+<section class="Designed mt-5 md:flex  relative bg-[url(/images/bg-pattern-circles.svg)] bg-top bg-contain md:bg-cover bg-no-repeat md:bg-none">
+ <div class=" relative">
   <h1 class="text-2xl font-bold text-center">Designed for the future</h1>
-  <div class="">
+  <!-- mobile illustration image -->
+  <div class="md:hidden">
     <img src="/images/illustration-editor-mobile.svg" alt="">
   </div>
 <!-- Introducing an extensible -->
-  <div class="md:w-1/2 p-6 text-center">
-    <h1 class="text-xl font-bold text-center">Introducing an extensible editor</h1>
+  <div class="md:w-3/4 p-6 text-center md:text-left">
+    <h1 class="text-xl font-bold text-center md:text-left">Introducing an extensible editor</h1>
     <p>Blogr features an exceedingly intuitive interface 
       which lets you focus on one thing: creating content.
        The editor supports management of multiple blogs and allows easy
@@ -175,12 +176,16 @@
   </div>
 <!-- End of Introducing  -->
 <!-- Robust section -->
-<div class="md:w-1/2 p-6 text-center">
+<div class="md:w-3/4 p-6 text-center">
   <h1 class="text-xl font-bold">  Robust content management</h1>
   <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
     by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
 </div>
  </div>
+ <!-- Desktop illustration-editor image -->
+<div class="hidden md:flex h-full w-full ">
+  <img src="/images/illustration-editor-desktop.svg" alt="" class=" rotate-180">
+</div>
  <!-- End of outer container -->
 </section>
 
