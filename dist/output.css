@@ -2818,6 +2818,10 @@ p{
     background-position: right;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
