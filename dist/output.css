@@ -2920,6 +2920,11 @@ p{
     padding: 5rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
