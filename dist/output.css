@@ -1929,6 +1929,10 @@ video {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1960,6 +1964,10 @@ video {
 
 .bg-left-bottom {
   background-position: left bottom;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-repeat {
@@ -2033,6 +2041,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-4 {
