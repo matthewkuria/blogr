@@ -84,17 +84,23 @@ color: var(--white);
     mix-blend-mode: multiply;
     background-image: url(/images/bg-pattern-circles.svg); 
     background-size: cover;
-    background-position:-80px -200px;  
+    background-position:-76px -200px;  
     background-repeat: no-repeat;
     border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
 }
-@media (min-1024px) {
+@media  (min-width:728px) {
     .HERO, .HERO .OVERLAY{
         height: 600px;
     }
     .STATE{
-        background-color: var(--very-dark-black-blue);
-        border-bottom-left-radius: 100px;
+        border-bottom-left-radius: 0px;
+        background-color: var(--very-dark-black-blue); 
+        background-size: cover;
+        mix-blend-mode: multiply;
+        background-position:-390px -800px ;  
+        background-repeat: no-repeat;      
         border-top-right-radius: 100px;
     }
 }

@@ -747,8 +747,8 @@ video {
   margin-right: -10rem;
 }
 
-.-mt-24 {
-  margin-top: -6rem;
+.-mt-36 {
+  margin-top: -9rem;
 }
 
 .mb-0 {
@@ -757,6 +757,10 @@ video {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-36 {
+  margin-bottom: 9rem;
 }
 
 .mb-5 {
@@ -2695,19 +2699,24 @@ p{
   mix-blend-mode: multiply;
   background-image: url(/images/bg-pattern-circles.svg);
   background-size: cover;
-  background-position:-80px -200px;
+  background-position:-76px -200px;
   background-repeat: no-repeat;
   border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
-@media (min-1024px) {
+@media  (min-width:728px) {
   .HERO, .HERO .OVERLAY{
     height: 600px;
   }
 
   .STATE{
+    border-bottom-left-radius: 0px;
     background-color: var(--very-dark-black-blue);
-    border-bottom-left-radius: 100px;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    background-position:-390px -800px ;
+    background-repeat: no-repeat;
     border-top-right-radius: 100px;
   }
 }
@@ -2807,6 +2816,10 @@ p{
     margin-right: 2.5rem;
   }
 
+  .md\:-mt-24 {
+    margin-top: -6rem;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2829,6 +2842,10 @@ p{
 
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:mt-40 {
+    margin-top: 10rem;
   }
 
   .md\:block {
