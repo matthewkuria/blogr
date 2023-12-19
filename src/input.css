@@ -80,7 +80,12 @@ color: var(--white);
     background-image: var(--background-gradient);
 }
 .STATE{
-    background-color: var(--very-dark-black-blue);   
+    background-color: var(--very-dark-black-blue);
+    mix-blend-mode: multiply;
+    background-image: url(/images/bg-pattern-circles.svg); 
+    background-size: cover;
+    background-position:-80px -200px;  
+    background-repeat: no-repeat;
     border-top-right-radius: 100px;
 }
 @media (min-1024px) {
